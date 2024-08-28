@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - GlamGrid</title>
+    <link rel="stylesheet" href="product-view.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="product-view.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">GlamGrid</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+                 <li><a href="products.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="order-confirmation.html">Order Confirmation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="search.html">Search</a></li>
+                
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="product-details">
+            <div class="product-image">
+                <img src="product1.jpg" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h2><ins>Product Name</ins></h2>
+                <p>Description of the product. Elegant Gold-Plated Necklace Set with Earrings.Elevate your style with our exquisite gold-plated necklace set, perfect for any occasion. This beautifully crafted set includes a stunning necklace and matching earrings, designed to add a touch of elegance and sophistication to your look.</p>
+                <p><strong>Price:</strong> $29.99</p>
+                <form action="cart.html" method="post">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                    <button type="submit">Add to Cart</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section class="product-details">
+            <div class="product-image">
+                <img src="product2.jpg" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h2><ins>Product Name</ins></h2>
+                <p>Description of the product. Professional Ionic Hair Dryer with Diffuser and Concentrator.Achieve salon-quality hair styling at home with our Professional Ionic Hair Dryer. Designed for all hair types, this powerful and versatile hair dryer combines advanced technology with user-friendly features to give you smooth, shiny, and frizz-free hair every day.</p>
+                <p><strong>Price:</strong> $49.99</p>
+                <form action="cart.html" method="post">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                    <button type="submit">Add to Cart</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section class="product-details">
+            <div class="product-image">
+                <img src="product3.jpg" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h2><ins>Product Name</ins></h2>
+                <p>Description of the product.Radiant Glow Face Serum.Discover the secret to youthful, glowing skin with our Radiant Glow Face Serum. Formulated with a powerful blend of natural ingredients, this serum is designed to deeply nourish, hydrate, and rejuvenate your skin, giving you a radiant complexion that lasts all day.</p>
+                <p><strong>Price:</strong> $39.99</p>
+                <form action="cart.html" method="post">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                    <button type="submit">Add to Cart</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3><ins>About GlamGrid</ins></h3>
+                <p>Your one-stop online shop for all your needs.</p>
+            </div>
+            <div class="footer-section links">
+                <h3><ins>Quick Links</ins></h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3><ins>Contact Us</ins></h3>
+                <p>Email: support@eshop.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GlamGrid. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn">↑</button>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - GlamGrid</title>
+    <link rel="stylesheet" href="products.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="products.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">GlamGrid</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+                 <li><a href="products.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="order-confirmation.html">Order Confirmation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="search.html">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Filter Section -->
+        <aside class="filters">
+            <h2><ins>Filters</ins></h2>
+            <section class="filter-category">
+                <h3><ins>Category</ins></h3>
+                <hr>
+                <ul>
+                    <li><a href="products.html?category=1"><ins>Category 1</ins></a></li>
+                    <br>
+                    <li><a href="products.html?category=2"><ins>Category 2</ins></a></li>
+                    <!-- Add more categories as needed -->
+                </ul>
+            </section>
+            <section class="filter-price">
+                <h3><ins>Price Range</ins></h3>
+                <form id="priceFilterForm">
+                    <label for="minPrice">Min Price:</label>
+                    <input type="number" id="minPrice" name="minPrice" placeholder="0">
+                    <label for="maxPrice">Max Price:</label>
+                    <input type="number" id="maxPrice" name="maxPrice" placeholder="1000">
+                    <button type="submit">Apply</button>
+                </form>
+            </section>
+        </aside>
+
+        <!-- Products List -->
+        <section class="products-list">
+            <h2><ins>Products</ins></h2>
+            <hr>
+            <div class="product-item">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                
+                <p> Description of Product 3.</p>
+                
+                <p><strong>Price:</strong> $29.99</p>
+                
+                <a href="product-view.html?product_id=1">View Details</a>
+            </div>
+        <section class="products-list">
+            <h2><ins>Products</ins></h2>
+            <hr>
+            <div class="product-item">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Description of Product 2.</p>
+                <p><strong>Price:</strong> $49.99</p>
+                <a href="product-view.html?product_id=2">View Details</a>
+            </div>
+        </section>
+            <div class="product-item">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <hr>
+                <p>Description of Product 3.</p>
+                <p><strong>Price:</strong> $39.99</p>
+                <a href="product-view.html?product_id=2">View Details</a>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3><ins>About GlamGrid</ins></h3>
+                <p>Your one-stop online shop for all your needs.</p>
+            </div>
+            <div class="footer-section links">
+                <h3><ins>Quick Links</ins></h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3><ins>Contact Us</ins></h3>
+                <p>Email: support@eshop.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GlamGrid. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn">↑</button>
+</body>
+</html>
